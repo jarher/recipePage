@@ -1,0 +1,44 @@
+.instructions-content h3 {
+  color: var(--Nutmeg);
+  font-size: 1.8rem;
+  font-family: "Young-Serif";
+  font-weight: 400;
+}
+.instructions-list {
+  padding: 0;
+  margin-left: 9%;
+  margin-bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.instructions-list li {
+  margin-left: 0;
+  font-size: 1rem;
+  font-family: "Outfit";
+  padding-left: 1rem;
+  color: var(--Wenge-Brown);
+  line-height: 1.5rem;
+}
+.instructions-list li::marker {
+  color: var(--Nutmeg);
+  font-weight: 700;
+}
+.instructions-list li b {
+  color: var(--Dark-Charcoal);
+}
+@media (min-width: 1024px) {
+  .instructions-content h3 {
+    font-size: 1.4rem;
+  }
+  .instructions-list {
+    gap: 0.4rem;
+    margin-left: 4%;
+  }
+  .instructions-list li {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    padding-left: 0.6rem;
+  }
+}

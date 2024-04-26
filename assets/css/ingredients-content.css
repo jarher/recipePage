@@ -1,0 +1,36 @@
+.ingredients-content h2 {
+  color: var(--Nutmeg);
+  font-size: 1.9rem;
+  font-family: "Young-Serif";
+  font-weight: 400;
+}
+.ingredients-list {
+  padding: 0;
+  margin-left: 8%;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.ingredients-list li {
+  margin-left: 0;
+  font-size: 1rem;
+  font-family: "Outfit";
+  padding-left: 0.8rem;
+  color: var(--Wenge-Brown);
+}
+.ingredients-list li::marker {
+  font-size: 0.7rem;
+}
+@media (min-width: 1024px) {
+  .ingredients-content h2 {
+    font-size: 1.4rem;
+  }
+  .ingredients-list {
+    margin-left: 4%;
+    gap: 0.5rem;
+  }
+  .ingredients-list li {
+    font-size: 0.9rem;
+  }
+}

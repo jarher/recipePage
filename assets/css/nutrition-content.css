@@ -1,0 +1,65 @@
+.nutrition-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.nutrition-content h4 {
+  color: var(--Nutmeg);
+  font-size: 1.8rem;
+  font-family: "Young-Serif";
+  font-weight: 400;
+}
+.nutrition-content table {
+  display: inherit;
+  flex-direction: inherit;
+  gap: 1rem;
+  font-family: "Outfit";
+  color: var(--Wenge-Brown);
+  width: 100%;
+}
+.nutrition-content table caption {
+  text-align: left;
+  line-height: 1.5rem;
+}
+.nutrition-content table tr {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--Light-Grey);
+}
+.nutrition-content table tr:last-child {
+  border: none;
+}
+.nutrition-content table tr td:nth-child(1) {
+  text-align: left;
+  width: 18%;
+}
+
+.nutrition-content table tr td:nth-child(2) {
+  color: var(--Nutmeg);
+  font-weight: 700;
+  width: 34%;
+}
+@media (min-width: 1024px) {
+  .nutrition-content {
+    gap: 0.5rem;
+  }
+  .nutrition-content h4 {
+    font-size: 1.4rem;
+  }
+  .nutrition-content table tr {
+    height: 2.3rem;
+    justify-content: flex-start;
+  }
+  .nutrition-content table caption,
+  .nutrition-content table tr td {
+    font-size: 0.9rem;
+  }
+  .nutrition-content table tr td {
+    flex: 1;
+  }
+  .nutrition-content table tr td:first-child {
+    padding-left: 5%;
+  }
+}
